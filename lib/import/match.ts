@@ -18,7 +18,7 @@ export function proposeRecords(pages:TextPage[],rooms:Room[]):Draft[]{
    if(!matches.length)continue;
    const prices=[...line.matchAll(/(?:\$|USD\s*)(\d+(?:,\d{3})*(?:\.\d{2})?)(?![\d.])/gi)];
    const suggestedAmount=prices.length===1?Number(prices[0][1].replaceAll(',','')):0;
-   result.push({ref:matches.length===1?matches[0]:'',title:line.slice(0,240),kind:prices.length===1?'expense':'progress',amount:suggestedAmount,status:'Pending',notes:line.slice(0,3000),page:page.page,selected:matches.length===1});
+   result.push({ref:matches.length===1?matches[0]:'',title:line.slice(0,240),kind:'progress',amount:0,status:'Pending',notes:line.slice(0,3000),page:page.page,selected:matches.length===1});
    if(result.length>=100)return result;
   }
  }
