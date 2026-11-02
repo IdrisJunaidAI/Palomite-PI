@@ -4,9 +4,6 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Palomite Project Intelligence",
   description: "Expense control and project accountability for Palomita Dental, Welby Storage, and Palomita Layout.",
-  other: {
-    "codex-preview": "development",
-  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
