@@ -1,5 +1,6 @@
 import { integer, real, sqliteTable, text, index } from 'drizzle-orm/sqlite-core';
 export const records = sqliteTable('records', {
+ documentId:text('document_id'), sourcePage:integer('source_page'),
  id: integer('id').primaryKey({autoIncrement:true}),
  entity: text('entity').notNull(), kind: text('kind').notNull(),
  ref: text('ref').notNull().default(''), title: text('title').notNull(),
@@ -8,3 +9,9 @@ export const records = sqliteTable('records', {
  notes: text('notes').notNull().default(''), actor: text('actor').notNull(),
  createdAt: text('created_at').notNull(),
 }, t=>[index('idx_records_entity_kind').on(t.entity,t.kind)]);
+
+export const layoutDocuments=sqliteTable('layout_documents',{
+ id:text('id').primaryKey(), filename:text('filename').notNull(), mime:text('mime').notNull(),
+ extractedText:text('extracted_text').notNull(), recordCount:integer('record_count').notNull(),
+ actor:text('actor').notNull(), createdAt:text('created_at').notNull(),
+});
