@@ -22,3 +22,8 @@ export const procurementDocuments=sqliteTable('procurement_documents',{
  vendor:text('vendor').notNull(),email:text('email').notNull(),phone:text('phone').notNull(),reference:text('reference').notNull(),relatedReference:text('related_reference').notNull(),date:text('date').notNull(),currency:text('currency').notNull(),total:real('total').notNull(),
  extractedText:text('extracted_text').notNull(),items:text('items').notNull(),createdAt:text('created_at').notNull(),approvedAt:text('approved_at'),
 },t=>[index('idx_procurement_actor_entity').on(t.actor,t.entity),uniqueIndex('idx_procurement_business_key').on(t.businessKey)]);
+
+export const vendorSchedules=sqliteTable('vendor_schedules',{
+ id:text('id').primaryKey(),actor:text('actor').notNull(),entity:text('entity').notNull(),documentId:text('document_id').notNull(),
+ amount:real('amount').notNull(),date:text('date').notNull(),startTime:text('start_time').notNull(),endTime:text('end_time').notNull(),timeZone:text('time_zone').notNull(),startUtc:text('start_utc').notNull(),endUtc:text('end_utc').notNull(),location:text('location').notNull(),contact:text('contact').notNull(),checkNumber:text('check_number').notNull(),recipient:text('recipient').notNull(),notes:text('notes').notNull(),status:text('status').notNull(),version:integer('version').notNull(),history:text('history').notNull(),createdAt:text('created_at').notNull(),updatedAt:text('updated_at').notNull(),
+},t=>[index('idx_schedule_account_project').on(t.actor,t.entity)]);
