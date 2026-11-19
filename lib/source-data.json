@@ -1,0 +1,601 @@
+{
+  "dental": [
+    {
+      "id": "PDM001",
+      "code": "A",
+      "category": "Permits, mobilization & demolitions",
+      "item": "City Permits",
+      "amount": 3500
+    },
+    {
+      "id": "PDM002",
+      "code": "A",
+      "category": "Permits, mobilization & demolitions",
+      "item": "ADA registration and inspection",
+      "amount": 1250
+    },
+    {
+      "id": "PDM003",
+      "code": "A",
+      "category": "Permits, mobilization & demolitions",
+      "item": "Portable Restrooms",
+      "amount": 700
+    },
+    {
+      "id": "PDM004",
+      "code": "A",
+      "category": "Permits, mobilization & demolitions",
+      "item": "Demo/plumbing/concrete Patch",
+      "amount": 10500
+    },
+    {
+      "id": "PDM005",
+      "code": "B",
+      "category": "Framing and foundation Materials",
+      "item": "Framing Material",
+      "amount": 5556
+    },
+    {
+      "id": "PDM006",
+      "code": "B",
+      "category": "Framing and foundation Materials",
+      "item": "Framing Labor",
+      "amount": 6945
+    },
+    {
+      "id": "PDM007",
+      "code": "B",
+      "category": "Framing and foundation Materials",
+      "item": "Sheetrock Material",
+      "amount": 12000
+    },
+    {
+      "id": "PDM008",
+      "code": "B",
+      "category": "Framing and foundation Materials",
+      "item": "Wood blocking Material",
+      "amount": 900
+    },
+    {
+      "id": "PDM009",
+      "code": "B",
+      "category": "Framing and foundation Materials",
+      "item": "Wood blocking Labor",
+      "amount": 900
+    },
+    {
+      "id": "PDM010",
+      "code": "B",
+      "category": "Framing and foundation Materials",
+      "item": "Sheetrock Installation",
+      "amount": 3600
+    },
+    {
+      "id": "PDM011",
+      "code": "B",
+      "category": "Framing and foundation Materials",
+      "item": "Framing Labor",
+      "amount": 18300
+    },
+    {
+      "id": "PDM012",
+      "code": "B",
+      "category": "Framing and foundation Materials",
+      "item": "Insulation material walls R28",
+      "amount": 1980
+    },
+    {
+      "id": "PDM013",
+      "code": "B",
+      "category": "Framing and foundation Materials",
+      "item": "Insulation installation R30",
+      "amount": 4575
+    },
+    {
+      "id": "PDM014",
+      "code": "C",
+      "category": "Interior Finishes",
+      "item": "Painting including labor and material, Tape, Float, Texture, Paint",
+      "amount": 12200
+    },
+    {
+      "id": "PDM015",
+      "code": "C",
+      "category": "Interior Finishes",
+      "item": "FRP with trims at prep area with labor",
+      "amount": 1100
+    },
+    {
+      "id": "PDM016",
+      "code": "C",
+      "category": "Interior Finishes",
+      "item": "Rubber base, 120 LF roll with installation",
+      "amount": 1080
+    },
+    {
+      "id": "PDM017",
+      "code": "C",
+      "category": "Interior Finishes",
+      "item": "LVT and Labor",
+      "amount": 13000
+    },
+    {
+      "id": "PDM018",
+      "code": "C",
+      "category": "Interior Finishes",
+      "item": "Ceramic Tile at restrooms and 48 inch wainscot with labor",
+      "amount": 2700
+    },
+    {
+      "id": "PDM019",
+      "code": "C",
+      "category": "Interior Finishes",
+      "item": "Gyp Bd Clg and framing",
+      "amount": 1925
+    },
+    {
+      "id": "PDM020",
+      "code": "C",
+      "category": "Interior Finishes",
+      "item": "Suspended Ceiling with Labor",
+      "amount": 5250
+    },
+    {
+      "id": "PDM021",
+      "code": "C",
+      "category": "Interior Finishes",
+      "item": "Restroom Accessories",
+      "amount": 1500
+    },
+    {
+      "id": "PDM022",
+      "code": "D",
+      "category": "Doors & Frames",
+      "item": "Wood Door and Frame",
+      "amount": 12800
+    },
+    {
+      "id": "PDM023",
+      "code": "D",
+      "category": "Doors & Frames",
+      "item": "Glass door",
+      "amount": 1200
+    },
+    {
+      "id": "PDM024",
+      "code": "D",
+      "category": "Doors & Frames",
+      "item": "Sliding Doors Glass",
+      "amount": 2400
+    },
+    {
+      "id": "PDM025",
+      "code": "D",
+      "category": "Doors & Frames",
+      "item": "Windows",
+      "amount": 600
+    },
+    {
+      "id": "PDM026",
+      "code": "D",
+      "category": "Doors & Frames",
+      "item": "Storefront Entrance",
+      "amount": 5800
+    },
+    {
+      "id": "PDM027",
+      "code": "D",
+      "category": "Doors & Frames",
+      "item": "Labor and Hardware",
+      "amount": 5200
+    },
+    {
+      "id": "PDM028",
+      "code": "D",
+      "category": "Doors & Frames",
+      "item": "Wood Trims at doors",
+      "amount": 4000
+    },
+    {
+      "id": "PDM029",
+      "code": "D",
+      "category": "Doors & Frames",
+      "item": "Extinguisher installed and tagged",
+      "amount": 375
+    },
+    {
+      "id": "PDM030",
+      "code": "D",
+      "category": "Doors & Frames",
+      "item": "Granite Counter Top at front area",
+      "amount": 3920
+    },
+    {
+      "id": "PDM031",
+      "code": "D",
+      "category": "Doors & Frames",
+      "item": "Cabinets New",
+      "amount": 12250
+    },
+    {
+      "id": "PDM032",
+      "code": "D",
+      "category": "Doors & Frames",
+      "item": "Cabinets wood existing install only",
+      "amount": 3500
+    },
+    {
+      "id": "PDM033",
+      "code": "E",
+      "category": "Plumbing",
+      "item": "Plumbing rough in",
+      "amount": 42000
+    },
+    {
+      "id": "PDM034",
+      "code": "E",
+      "category": "Plumbing",
+      "item": "Plumbing fixtures",
+      "amount": 11200
+    },
+    {
+      "id": "PDM035",
+      "code": "E",
+      "category": "Plumbing",
+      "item": "Medgas compressed air vacuum lines only",
+      "amount": 36000
+    },
+    {
+      "id": "PDM036",
+      "code": "F",
+      "category": "Electrical",
+      "item": "Electrical",
+      "amount": 60000
+    },
+    {
+      "id": "PDM037",
+      "code": "F",
+      "category": "Electrical",
+      "item": "Lighting",
+      "amount": 15000
+    },
+    {
+      "id": "PDM038",
+      "code": "F",
+      "category": "Electrical",
+      "item": "DATA TV allowance",
+      "amount": 5000
+    },
+    {
+      "id": "PDM039",
+      "code": "G",
+      "category": "HVAC",
+      "item": "HVAC",
+      "amount": 57000
+    },
+    {
+      "id": "PDM040",
+      "code": "H",
+      "category": "Alarms",
+      "item": "Fire Alarm Security Alarm allowance",
+      "amount": 1250
+    },
+    {
+      "id": "PDM041",
+      "code": "I",
+      "category": "Miscellaneous",
+      "item": "Final Clean up",
+      "amount": 750
+    },
+    {
+      "id": "PDM042",
+      "code": "I",
+      "category": "Miscellaneous",
+      "item": "Trash Container Rental",
+      "amount": 2800
+    },
+    {
+      "id": "PDM043",
+      "code": "I",
+      "category": "Miscellaneous",
+      "item": "Kitchen equipment",
+      "amount": 1000
+    },
+    {
+      "id": "PDM044",
+      "code": "PM",
+      "category": "Project Management",
+      "item": "Contractor Project Management",
+      "amount": 39350.6
+    }
+  ],
+  "welby": [
+    {
+      "id": "WCS001",
+      "code": "A",
+      "category": "Permits, mobilization & demolitions",
+      "item": "City Permits",
+      "amount": 1750
+    },
+    {
+      "id": "WCS002",
+      "code": "B",
+      "category": "Foundation",
+      "item": "Foundation soil compaction",
+      "amount": 5750
+    },
+    {
+      "id": "WCS003",
+      "code": "B",
+      "category": "Foundation",
+      "item": "Concrete",
+      "amount": 9375
+    },
+    {
+      "id": "WCS004",
+      "code": "B",
+      "category": "Foundation",
+      "item": "Rebar for foundation and plates",
+      "amount": 8050
+    },
+    {
+      "id": "WCS005",
+      "code": "B",
+      "category": "Foundation",
+      "item": "Foundation accessories",
+      "amount": 1150
+    },
+    {
+      "id": "WCS006",
+      "code": "B",
+      "category": "Foundation",
+      "item": "Labor",
+      "amount": 9200
+    },
+    {
+      "id": "WCS007",
+      "code": "B",
+      "category": "Wood, plastic & composites",
+      "item": "Metal Building",
+      "amount": 41400
+    },
+    {
+      "id": "WCS008",
+      "code": "B",
+      "category": "Wood, plastic & composites",
+      "item": "Roof System",
+      "amount": 13800
+    },
+    {
+      "id": "WCS009",
+      "code": "B",
+      "category": "Wood, plastic & composites",
+      "item": "Framing Accessories",
+      "amount": 2300
+    },
+    {
+      "id": "WCS010",
+      "code": "B",
+      "category": "Wood, plastic & composites",
+      "item": "Exterior sheathing and plaster",
+      "amount": 13800
+    },
+    {
+      "id": "WCS011",
+      "code": "B",
+      "category": "Wood, plastic & composites",
+      "item": "Framing Labor",
+      "amount": 17500
+    },
+    {
+      "id": "WCS012",
+      "code": "C",
+      "category": "Finishes",
+      "item": "Spray Foam Insulation at roof",
+      "amount": 5750
+    },
+    {
+      "id": "WCS013",
+      "code": "C",
+      "category": "Finishes",
+      "item": "Metal stud perimeter with insulation",
+      "amount": 9200
+    },
+    {
+      "id": "WCS014",
+      "code": "C",
+      "category": "Finishes",
+      "item": "Plaster finish material and labor",
+      "amount": 11500
+    },
+    {
+      "id": "WCS015",
+      "code": "D",
+      "category": "Doors & Frames",
+      "item": "OH Door",
+      "amount": 5500
+    },
+    {
+      "id": "WCS016",
+      "code": "D",
+      "category": "Doors & Frames",
+      "item": "Door and Frame",
+      "amount": 1250
+    },
+    {
+      "id": "WCS017",
+      "code": "F",
+      "category": "Electrical",
+      "item": "Electrical Subcontractor",
+      "amount": 13800
+    },
+    {
+      "id": "WCS018",
+      "code": "F",
+      "category": "Electrical",
+      "item": "Electrical Panel and UG run",
+      "amount": 5000
+    },
+    {
+      "id": "WCS019",
+      "code": "F",
+      "category": "Electrical",
+      "item": "Lights fans Allowance",
+      "amount": 1500
+    },
+    {
+      "id": "WCS020",
+      "code": "H",
+      "category": "Landscaping & Irrigation",
+      "item": "Landscaping & Irrigation",
+      "amount": 2500
+    },
+    {
+      "id": "WCS021",
+      "code": "N",
+      "category": "Miscellaneous",
+      "item": "Final Clean up",
+      "amount": 500
+    },
+    {
+      "id": "WCS022",
+      "code": "N",
+      "category": "Miscellaneous",
+      "item": "Trash Container Rental",
+      "amount": 700
+    },
+    {
+      "id": "WCS023",
+      "code": "CM",
+      "category": "Construction Management",
+      "item": "Construction Manager cost plus",
+      "amount": 18127.5
+    }
+  ],
+  "layout": [
+    {
+      "id": "200",
+      "name": "Manager"
+    },
+    {
+      "id": "201",
+      "name": "Lobby / Waiting"
+    },
+    {
+      "id": "202",
+      "name": "Reception"
+    },
+    {
+      "id": "203",
+      "name": "Business Office"
+    },
+    {
+      "id": "204",
+      "name": "Storage"
+    },
+    {
+      "id": "205",
+      "name": "XRay 1"
+    },
+    {
+      "id": "206",
+      "name": "Hallway"
+    },
+    {
+      "id": "207",
+      "name": "Hygiene Area"
+    },
+    {
+      "id": "208",
+      "name": "Restroom"
+    },
+    {
+      "id": "209",
+      "name": "Hygiene Area"
+    },
+    {
+      "id": "210",
+      "name": "Treatment Room 1"
+    },
+    {
+      "id": "211",
+      "name": "Recovery"
+    },
+    {
+      "id": "212",
+      "name": "Hallway"
+    },
+    {
+      "id": "213",
+      "name": "Med Gas"
+    },
+    {
+      "id": "214",
+      "name": "Hallway"
+    },
+    {
+      "id": "215",
+      "name": "Treatment Room 2"
+    },
+    {
+      "id": "216",
+      "name": "Storage"
+    },
+    {
+      "id": "217",
+      "name": "Lab Area"
+    },
+    {
+      "id": "218",
+      "name": "Sterilization"
+    },
+    {
+      "id": "219",
+      "name": "Hallway"
+    },
+    {
+      "id": "220",
+      "name": "Treatment Room 3"
+    },
+    {
+      "id": "221",
+      "name": "Treatment Room 4"
+    },
+    {
+      "id": "222",
+      "name": "Treatment Room 5"
+    },
+    {
+      "id": "223",
+      "name": "AC Units / HW"
+    },
+    {
+      "id": "224",
+      "name": "Elec"
+    },
+    {
+      "id": "225",
+      "name": "Restroom"
+    },
+    {
+      "id": "226",
+      "name": "Hallway"
+    },
+    {
+      "id": "227",
+      "name": "Dr. Office"
+    },
+    {
+      "id": "228",
+      "name": "PVT Restroom"
+    },
+    {
+      "id": "229",
+      "name": "Custodian"
+    },
+    {
+      "id": "230",
+      "name": "Break Room"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import ts from 'typescript';import {readFile} from 'node:fs/promises';
+const code=ts.transpileModule(await readFile('lib/procurement/extract.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
+const {extractProcurement:extract}=await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
+const page=text=>[{page:1,text}];
+test('quote extracts explicit vendor, reference and materials without becoming payment',()=>{const d=extract(page('QUOTATION\nVendor: Acme Electrical\nQuote #: Q-21\nCurrency: USD\nElectrical cable | 10 | m | 5.00 | 50.00\nLabor installation | 2 | hours | 25.00 | 50.00\nTotal: USD 100.00'));assert.equal(d.type,'quotation');assert.equal(d.reference,'Q-21');assert.equal(d.vendor,'Acme Electrical');assert.equal(d.currency,'USD');assert.equal(d.total,100);assert.equal(d.items.length,2);assert.equal(d.items[0].category,'material');assert.equal(d.items[1].category,'labor');});
+test('dollar alone does not guess currency',()=>assert.equal(extract(page('Invoice\nTotal: $100.00')).currency,''));
+test('invoice with paid note is not payment evidence',()=>assert.equal(extract(page('Invoice\nPaid amount: $100.00')).type,'invoice'));
+test('conflicting totals need review',()=>assert.equal(extract(page('Total: USD 100.00\nTotal: USD 200.00')).total,null));
+test('no invented vendor, amount, reference or quantity',()=>{const d=extract(page('Room 210 painting completed'));assert.equal(d.vendor,'');assert.equal(d.reference,'');assert.equal(d.total,null);assert.equal(d.items.length,0);assert.equal(d.type,'unknown')});
+test('line arithmetic mismatch is flagged and totals not treated as items',()=>{const d=extract(page('Cement | 2 | bags | 10.00 | 30.00\nTotal: USD 30.00'));assert.equal(d.items.length,1);assert.ok(d.warnings.some(w=>w.includes('multiplied')))});
+test('mixed currencies are not summed into one',()=>assert.equal(extract(page('Quote USD 100\nCAD 200')).currency,''));
+test('purchase order retains separate lifecycle',()=>assert.equal(extract(page('Purchase order\nTotal: NGN 200.00')).type,'order'));
