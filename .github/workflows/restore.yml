@@ -13,8 +13,8 @@ jobs:
       - name: Verify and restore original source tree
         run: |
           set -eu
-          test "$(git ls-tree --name-only HEAD^)" = Palomite.zip
-          test "$(git rev-parse HEAD^)" = 37f984aaf73b34eb018b224afb2fa27faf7b903b
+          test "$(git rev-parse HEAD^)" = f36c55d0ad0860134c884faca1ac27b36dbd299b
+          test "$(git rev-parse HEAD:Palomite.zip)" = "$(git rev-parse 37f984aaf73b34eb018b224afb2fa27faf7b903b:Palomite.zip)"
           unzip -p Palomite.zip Palomite.bundle > "$RUNNER_TEMP/source.bundle"
           git fetch "$RUNNER_TEMP/source.bundle" refs/heads/main
           source=$(git rev-parse FETCH_HEAD)
