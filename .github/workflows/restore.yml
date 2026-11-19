@@ -1,0 +1,26 @@
+name: Restore Palomite history
+on: [push, workflow_dispatch]
+permissions:
+  contents: write
+jobs:
+  restore:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify and restore original source tree
+        run: |
+          set -eu
+          test "$(git ls-tree --name-only HEAD^)" = Palomite.zip
+          test "$(git rev-parse HEAD^)" = 37f984aaf73b34eb018b224afb2fa27faf7b903b
+          unzip -p Palomite.zip Palomite.bundle > "$RUNNER_TEMP/source.bundle"
+          git fetch "$RUNNER_TEMP/source.bundle" refs/heads/main
+          source=$(git rev-parse FETCH_HEAD)
+          test "$source" = 75291764e8e860be195bd309d395faf86107c9e1
+          test "$(git rev-list --count "$source")" = 8
+          git config user.name "Palomite import"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          restored=$(git commit-tree "$source^{tree}" -p HEAD -p "$source" -m "Restore Palomite application and original history")
+          git push origin "$restored:refs/heads/main"
