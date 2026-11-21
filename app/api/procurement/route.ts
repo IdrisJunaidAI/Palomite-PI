@@ -29,5 +29,5 @@ export async function POST(request:Request){
 export async function PATCH(request:Request){
  const user=await actor();if(!user)return Response.json({error:'Sign in required'},{status:401});
  const data=await request.json().catch(()=>null) as {id?:string;action?:string}|null;if(!data?.id||data.action!=='approve')return Response.json({error:'Invalid approval request'},{status:400});
- try{if(!env.DB)throw Error();const result=await env.DB.prepare("UPDATE procurement_documents SET status='Approved',approved_at=? WHERE id=? AND actor=? AND type='order' AND status='Draft'").bind(new Date().toISOString(),data.id,user).run();if(!result.meta.changes)return Response.json({error:'Draft order not found'},{status:409});return Response.json({ok:true});}catch{return Response.json({error:'Could not approve order'},{status:503});}
+ try{if(!env.DB)throw Error();const result=await env.DB.prepare("UPDATE procurement_documents SET status='Approved',approved_at=? WHERE id=? AND actor=? AND ((type='order' AND status='Draft') OR (type='quotation' AND status='Recorded'))").bind(new Date().toISOString(),data.id,user).run();if(!result.meta.changes)return Response.json({error:'Document is unavailable for approval'},{status:409});return Response.json({ok:true});}catch{return Response.json({error:'Could not approve order'},{status:503});}
 }
